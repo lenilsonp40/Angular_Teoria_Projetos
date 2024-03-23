@@ -1,0 +1,21 @@
+<input 
+  id="meu-input" 
+  [value]="inputText" 
+  [type]="inputType" 
+  [disabled]="isDisabled"
+  (input)="handleInputEvent($event)" />
+  <!-- (keyup)="handleInputKeyup($event)" -->
+
+<br />
+
+<button (click)="enableInput()">Habilitar</button>
+<button (click)="disableInput()">Desabilitar</button>
+
+<br />
+
+<button (click)="setPasswordTypeInput()">Senha</button>
+<button (click)="setTextTypeInput()">Texto</button>
+
+<br />
+
+<button (click)="logInputText()">Log</button>
