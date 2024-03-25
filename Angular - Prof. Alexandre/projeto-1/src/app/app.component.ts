@@ -8,7 +8,6 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 export class AppComponent  {
 
 
-
   constructor(){
   }
 

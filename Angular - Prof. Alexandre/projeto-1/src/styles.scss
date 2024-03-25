@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    background-color: #333;
-    color: #fff;
+
+html, body { 
+    height: 100%;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-
+.container {
+    width: 80rem;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
