@@ -1,2 +1,1 @@
-Desenvolvendo projetos e revisando teoria para aplicar em projetos em desenvolvimento no Estágio.
-
+O objetivo principal deste repositório é acompanhar meu progresso no aprendizado de Angular, documentando meu processo de estudo e prática. Além disso, serve como uma fonte de referência para futuros projetos
