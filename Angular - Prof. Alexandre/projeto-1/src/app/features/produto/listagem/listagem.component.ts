@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProdutoService } from '../services/produto.service';
+import { Produtos } from '../models/produto.model';
 
 @Component({
   selector: 'app-listagem',
@@ -7,6 +8,7 @@ import { ProdutoService } from '../services/produto.service';
   styleUrls: ['./listagem.component.scss']
 })
 export class ListagemComponent implements OnInit{
+  produtos!: Produtos;
 
   constructor(private produtoService: ProdutoService){
 
@@ -14,8 +16,11 @@ export class ListagemComponent implements OnInit{
 
 
   ngOnInit(): void {
-    this.produtoService.getCidadePeloCep().subscribe(resposta => {
-      console.log(resposta)
+    this.produtoService.getProdutos()
+    .subscribe(produtos => {
+      this.produtos = produtos;
+      console.log(this.produtos)
+
     });
   }
 
