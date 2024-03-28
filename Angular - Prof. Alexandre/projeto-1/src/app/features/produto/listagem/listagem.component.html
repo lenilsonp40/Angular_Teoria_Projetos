@@ -1,20 +1,20 @@
 <div class="flex">
 
-  <mat-card class="example-card" *ngFor="let produto of produtos">
+  <mat-card class="example-card" *ngFor="let produto of produtos" (click)="selecionarProduto(produto)">
     <mat-card-header>
 
-      <mat-card-title>{{produto.nome}}</mat-card-title>
+      <mat-card-title class="title">{{produto.nome}}</mat-card-title>
 
     </mat-card-header>
     <img mat-card-image [src]="produto.imagemUrl" alt="foto do produto">
     <mat-card-content>
-      <p>
+      <p class="descricao">
         {{produto.descricao}}
       </p>
     </mat-card-content>
     <mat-card-actions class="flex">
-      <p>preço: {{produto.preco | currency: 'BRL'}}</p>
-      <p>estoque: {{produto.estoque}}</p>
+      <p class="preco">preço: {{produto.preco | currency: 'BRL'}}</p>
+      <p class="estoque">estoque: {{produto.estoque}}</p>
     </mat-card-actions>
   </mat-card>
 

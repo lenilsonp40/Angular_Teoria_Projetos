@@ -1,9 +1,29 @@
 .example-card {
   max-width: 300px;
+  cursor: pointer;
 }
 
 .flex {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+img {
+  height: 300px;
+  object-fit: contain;
+}
+
+.title {
+  font: 500;
+  margin: 0 auto;
+}
+
+.preco {
+  font-size: 25px;
+  color: rgb(28, 177, 28);
+}
+
+.estoque {
+  color: red;
 }

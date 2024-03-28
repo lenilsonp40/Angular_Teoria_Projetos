@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProdutoService } from '../services/produto.service';
-import { Produtos } from '../models/produto.model';
+import { Produto, Produtos } from '../models/produto.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listagem',
@@ -10,7 +11,7 @@ import { Produtos } from '../models/produto.model';
 export class ListagemComponent implements OnInit{
   produtos!: Produtos;
 
-  constructor(private produtoService: ProdutoService){
+  constructor(private produtoService: ProdutoService, private router: Router){
 
   }
 
@@ -22,6 +23,10 @@ export class ListagemComponent implements OnInit{
       console.log(this.produtos)
 
     });
+  }
+
+  selecionarProduto(produto: Produto){
+    this.router.navigate(['produto','editar-produto', produto.id])
   }
 
 
