@@ -1,12 +1,14 @@
 .example-card {
   max-width: 300px;
   cursor: pointer;
+  margin: 20px;
 }
 
 .flex {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 img {
@@ -26,4 +28,12 @@ img {
 
 .estoque {
   color: red;
+}
+
+.example-button-container{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: flex-end;
+  margin: 10px;
 }
